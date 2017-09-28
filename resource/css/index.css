@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url("../fonts/PressStart2P.ttf"); }
+body {
+  font-family: "PressStart2P", sans-serif; }
+
+#name {
+  color: #0084ff;
+  text-shadow: 1.5px 1.5px 0px whitesmoke;
+  z-index: 10; }
+
+#role {
+  color: red;
+  text-shadow: 1.5px 1.5px 0px whitesmoke;
+  z-index: 10; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.background {
+  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=ad8953ff&noise=82520a&density=52&opacity=30");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -5; }
+
+.nes-controller {
+  background-image: url(../images/NES_controller.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100px;
+  width: 150px; }
+
+.nes-zapper {
+  background-image: url(../images/NES_zapper.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+  transform: rotate(-60deg); }
+
+#player1 {
+  right: 15%;
+  top: 40%;
+  transform: rotate(30deg); }
+
+#player2 {
+  right: 20%;
+  top: 55%;
+  transform: rotate(-30deg); }
+
+.tv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -125px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  background-image: url(../images/tv_top.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 5; }
+
+#tv-base {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  width: 100%;
+  max-width: 400px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: grey;
+  z-index: 6; }
+
+#tv-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  width: 87.5%;
+  max-width: 350px;
+  border-radius: 200%;
+  border-bottom-right-radius: 200%;
+  background-color: #0084ff;
+  z-index: 5;
+  box-shadow: 0 0 10px #0084ff;
+  animation: tv-screen-glow 10s steps(1, end) infinite; }
+
+@keyframes tv-screen-glow {
+  10% {
+    box-shadow: 0 0 10px whitesmoke;
+    background-color: whitesmoke; }
+  35% {
+    box-shadow: 0 0 10px #0084ff;
+    background-color: #0084ff; }
+  60% {
+    box-shadow: 0 0 10px whitesmoke;
+    background-color: whitesmoke; }
+  85% {
+    box-shadow: 0 0 10px #0084ff;
+    background-color: #0084ff; } }
+.tv-glow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-image: radial-gradient(circle at top, #0084ff, transparent 55%, transparent);
+  opacity: 0.3;
+  animation: tv-glow 10s linear infinite;
+  pointer-events: none; }
+
+@keyframes tv-glow {
+  0% {
+    opacity: 0.2; }
+  10% {
+    opacity: 0.3; }
+  20% {
+    background-image: radial-gradient(circle at top, whitesmoke, transparent 55%, transparent);
+    opacity: 0.4; }
+  30% {
+    opacity: 0.1; }
+  40% {
+    opacity: 0.2; }
+  50% {
+    background-image: radial-gradient(circle at top, #0084ff, transparent 55%, transparent);
+    opacity: 0.4; }
+  60% {
+    opacity: 0.2; }
+  70% {
+    background-image: radial-gradient(circle at top, whitesmoke, transparent 55%, transparent);
+    opacity: 0.3; }
+  80% {
+    opacity: 0.2; }
+  90% {
+    opacity: 0.4; }
+  100% {
+    background-image: radial-gradient(circle at top, #0084ff, transparent 55%, transparent);
+    opacity: 0.2; } }
+.nes {
+  height: 250px;
+  width: 300px;
+  background-image: url(../images/NES_closed.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5; }
+  .nes h1 {
+    width: 210px;
+    text-align: left;
+    margin: 15px;
+    font-size: 1.1em; }
+
+.nes-background {
+  position: absolute;
+  height: 250px;
+  width: 295px;
+  margin: 0;
+  background-color: #44443A;
+  z-index: -1; }
+
+.row {
+  display: flex;
+  justify-content: center;
+  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=ad8953ff&noise=82520a&density=52&opacity=30");
+  height: 100%;
+  width: 100%; }
+
+.cartridge {
+  position: relative;
+  margin: 10px;
+  height: 320px;
+  width: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+  z-index: 1; }
+  .cartridge p {
+    width: 140px;
+    font-size: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 34px;
+    color: #0a0a0a;
+    text-shadow: 0 1px 1px #b7b7b7; }
+
+#projects {
+  background-image: url(../images/Cartridge_projects.svg); }
+
+#skills {
+  background-image: url(../images/Cartridge_skills.svg); }
+
+#about {
+  background-image: url(../images/Cartridge_about.svg); }
+
+.cartridge-hover {
+  transition: 0.2s; }
+  .cartridge-hover:hover {
+    transform: scale(1.05) translateY(-20px); }
+
+.cartridge.rotate {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 2; }
+
+@keyframes rotate {
+  100% {
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transform: rotate(180deg) scale(0.5); } }
+@media (max-width: 599px) {
+  .row {
+    flex-wrap: wrap; }
+
+  .cartridge:not(:first-child) {
+    margin-top: -250px; }
+
+  .nes-zapper {
+    left: -10%;
+    top: 10%;
+    transform: rotate(-10deg); }
+
+  #player1 {
+    right: 5%;
+    top: 10%;
+    transform: rotate(15deg); }
+
+  #player2 {
+    right: 5%;
+    top: 15%;
+    transform: rotate(-10deg); }
+
+  .tv {
+    width: 100%; }
+
+  #tv-screen {
+    width: 87.5%; }
+
+  #tv-base {
+    width: 100%; } }
+@media (max-height: 550px) {
+  .nes-zapper, #player1, #player2 {
+    display: none; } }
+@media (min-width: 600px) {
+  body {
+    overflow-y: hidden; }
+
+  .cartridge {
+    margin-top: -100px; }
+
+  .nes-zapper {
+    left: 5%;
+    top: 30%;
+    transform: rotate(-45deg); }
+
+  #player1 {
+    right: 5%;
+    top: 35%;
+    transform: rotate(30deg);
+    position: absolute; }
+
+  #player2 {
+    right: 3%;
+    top: 50%;
+    transform: rotate(-30deg);
+    position: absolute; } }
+@media (min-width: 900px) {
+  .nes-zapper {
+    left: 15%;
+    top: 35%;
+    transform: rotate(-60deg); }
+
+  #player1 {
+    right: 5%;
+    top: 40%;
+    transform: rotate(30deg); }
+
+  #player2 {
+    right: 10%;
+    top: 55%;
+    transform: rotate(-30deg); } }
+@media (min-width: 1200px) {
+  .nes-zapper {
+    left: 15%;
+    top: 35%;
+    transform: rotate(-60deg); }
+
+  #player1 {
+    right: 15%;
+    top: 40%;
+    transform: rotate(30deg); }
+
+  #player2 {
+    right: 20%;
+    top: 55%;
+    transform: rotate(-30deg); } }
+@media (min-width: 1800px) {
+  .nes-zapper {
+    left: 30%;
+    top: 35%;
+    transform: rotate(-60deg); }
+
+  #player1 {
+    right: 25%;
+    top: 40%;
+    transform: rotate(30deg); }
+
+  #player2 {
+    right: 30%;
+    top: 55%;
+    transform: rotate(-30deg); } }
+
+/*# sourceMappingURL=index.css.map */

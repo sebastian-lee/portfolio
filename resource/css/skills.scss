@@ -1,0 +1,70 @@
+@import 'secondaryPage';
+@import 'colors';
+
+.content{
+	background-color: $offblack;
+	color: $offwhite;
+}
+
+.row--skills{
+	@extend .row;
+	justify-content: space-around;
+	text-align: left;
+	border: 8px solid $pacman-blue;
+	border-radius:5px;
+
+	ul {
+		list-style: bullet;
+		li {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			height: 45px;
+			vertical-align: center;
+			padding-left: 30px;
+			font-size: 2em;
+		}
+	}
+}
+
+.point{
+	position:absolute;
+	
+	animation: fade-away 3s both;
+	margin-top: -45px;
+	color: yellow;
+}
+
+@keyframes fade-away{
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		transform: translateY(-15px);
+		opacity: 0;
+	}
+}
+
+@media (max-width: $phone-only) { 
+	.row--skills{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: 0 25px 0 25px;
+	}
+}
+
+@media (min-width: $tablet-portrait-up) {
+
+}
+
+@media (min-width: $tablet-landscape-up) {
+	
+}
+
+@media (min-width: $desktop-up) {
+
+}
+
+@media (min-width: $big-desktop-up) {
+
+}

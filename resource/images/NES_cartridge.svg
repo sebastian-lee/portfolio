@@ -1,0 +1,54 @@
+<svg width="187" height="212" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="189" height="214" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#999999" stroke-width="1.5" x="10.999977" y="164.653861" width="165.000046" height="46.80892" id="svg_48" rx="3" stroke="#999999"/>
+  <rect fill="#999999" stroke-width="1.5" x="0.750028" y="0.75" width="185.499958" height="184.25544" id="svg_1" rx="3" stroke="#999999"/>
+  <rect fill="#ffffff" stroke-width="1.5" x="78.250004" y="1.25" width="88.16666" height="137.333331" id="svg_4" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.75" y="0.75" width="35.000001" height="210.212831" id="svg_5" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.916668" y="187.659677" width="34.833332" height="23" id="svg_7" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="182.40982" width="34.5" height="5.250405" id="svg_8" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="176.909971" width="34.5" height="5.250405" id="svg_9" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="171.410121" width="34.5" height="5.250405" id="svg_10" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="165.484741" width="34.5" height="5.250405" id="svg_11" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="159.751684" width="34.5" height="5.250405" id="svg_18" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="154.251835" width="34.5" height="5.250405" id="svg_19" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="148.751985" width="34.5" height="5.250405" id="svg_20" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="143.252136" width="34.5" height="5.250405" id="svg_21" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="137.752287" width="34.5" height="5.250405" id="svg_22" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="132.252438" width="34.5" height="5.250405" id="svg_23" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="126.502595" width="34.5" height="5.250405" id="svg_24" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="121.002746" width="34.5" height="5.250405" id="svg_25" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="115.502897" width="34.5" height="5.250405" id="svg_26" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="110.003048" width="34.5" height="5.250405" id="svg_27" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="104.503199" width="34.5" height="5.250405" id="svg_28" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="99.003349" width="34.5" height="5.250405" id="svg_29" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="93.5035" width="34.5" height="5.250405" id="svg_30" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="88.003651" width="34.5" height="5.250405" id="svg_31" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="82.503802" width="34.5" height="5.250405" id="svg_32" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="77.003953" width="34.5" height="5.250405" id="svg_33" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="71.504103" width="34.5" height="5.250405" id="svg_34" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="66.004254" width="34.5" height="5.250405" id="svg_35" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="60.504405" width="34.5" height="5.250405" id="svg_36" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="55.004556" width="34.5" height="5.250405" id="svg_37" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="49.504707" width="34.5" height="5.250405" id="svg_38" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" stroke-opacity="null" x="32.750014" y="44.004857" width="34.5" height="5.250405" id="svg_39" stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="37.838343" width="35" height="5.250405" id="svg_40" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="32.088487" width="35" height="5.250405" id="svg_41" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="26.588638" width="35" height="5.250405" id="svg_42" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="20.838796" width="35" height="5.250405" id="svg_43" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="15.338947" width="35" height="5.250405" id="svg_44" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="9.589104" width="35" height="5.250405" id="svg_45" stroke="#4c4c4c"/>
+  <path fill="#7f7f7f" stroke-width="1.5" stroke-opacity="null" d="m85.28168,169.67304l9.16666,-17.66666l9.16666,17.66666l-18.33332,0z" id="svg_49" transform="rotate(180 94.44833374023436,160.8396759033203) " stroke="#7f7f7f"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="4.92241" width="35" height="3.917063" id="svg_50" stroke="#4c4c4c"/>
+  <rect fill="#999999" stroke-width="1.5" x="32.750014" y="0.922387" width="35" height="3.917063" id="svg_51" stroke="#4c4c4c"/>
+ </g>
+</svg>

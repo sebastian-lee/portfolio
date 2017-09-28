@@ -1,0 +1,162 @@
+@import 'secondaryPage';
+@import 'colors';
+
+.project-description{
+	font-family:Helvetica;
+}
+
+.project-skills{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	flex-wrap: wrap;
+	padding:0;
+	li {
+		margin:10px;
+	}
+}
+
+.project{
+	width: 100%;
+	max-width: 1000px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-description{
+	font-size:1.4em;
+}
+
+.project-header{
+	padding-bottom:10px;
+	color: rgba( 230, 230, 230, 1);
+	text-shadow: 2px 2px $light-black;
+	border-bottom: 2px solid $pacman-blue;
+}
+
+.project-text{
+	background-color: $background-grey;
+	color: $light-grey;
+	text-shadow: 1px 1px $light-black;
+	padding: 15px;
+	border-radius:5px;
+	margin-bottom:15px;
+}
+
+.content{
+	background-color: $offblack;
+	color: $offwhite;
+}
+
+.tech-button{
+	@extend .tv-button;
+
+	&:hover{
+		transform:translateY(-3px);
+	}
+}
+
+.project-media{	
+	flex-wrap: wrap;
+}
+
+.project-media-item{	
+	width: 70%;
+	margin: 10px auto 10px auto;
+	border: 2px solid $pacman-blue;
+	transition: 0.25s;
+
+	&:hover{
+		border: 3px solid $pacman-light-blue;
+	}
+}
+
+.project-media-main{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 800%;
+
+	.project-media-item{
+		width: 70%;
+	}
+}
+
+.project-media-secondary{
+
+	.project-media-item:hover{
+		 filter: brightness(100%);
+	}
+}
+
+.column{
+	justify-content: center;
+}
+
+
+@media (max-width: $phone-only) { 
+	
+	.project-text{
+		padding: 15px 30px 15px 30px;
+	}
+}
+
+@media (min-width: $tablet-portrait-up) {
+
+
+
+}
+
+@media (min-width: $tablet-landscape-up) {
+	.project-media{	
+		flex-wrap: nowrap;
+	}
+
+	.project-media-main{
+
+		.project-media-item{
+			width: 100%;
+		}
+	}
+
+	.project-media-item{
+		width: 100%;
+		margin: 15px;
+	}
+
+	.project-media-secondary{
+
+		.project-media-item:hover{
+			 filter: brightness(50%);
+			 cursor:pointer
+		}
+	}
+
+}
+
+@media (min-width: $desktop-up) {
+
+}
+
+@media (min-width: $big-desktop-up) {
+
+	.project-header, #title{
+		font-size: 3em;
+	}
+
+	.project-description{
+		font-size: 2.5em;
+	}
+
+	.project{
+		max-width: 1800px;
+	}
+
+	.project-skills{
+		li {
+			font-size: 2em;
+		}
+	}
+}

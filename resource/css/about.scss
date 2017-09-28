@@ -1,0 +1,157 @@
+@import 'secondaryPage';
+@import 'colors';
+
+$aboutPictureWidth : 500px;
+
+.about-picture{
+	margin:auto;
+	width:100%;
+	height: $aboutPictureWidth - 200px;
+	
+	img{
+		height:100%;
+	}
+}
+
+.content{
+	background-color: $offblack;
+
+	h1, p{
+		color: $offwhite;
+	}
+}
+
+
+
+#triangle-bottomright {	
+	margin-top: -75px;
+	position:absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 75px solid $offblack;
+	border-left:  300px solid transparent;
+
+}
+
+.name-header{
+	transform: rotate(-14deg);
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-35px;
+	margin-bottom:100px;
+	font-family:Helvetica;
+	
+	h2{
+		font-size:1.5em;
+		margin:15px 0 0 0;
+		color: $pacman-blue;
+		text-shadow: 1px 1px $offblack;
+	}
+	h3{
+		font-size:0.7em;
+		margin:0;
+		color: rgba(249,224,13,1);
+	}
+
+	img {
+		width: 70px;
+		height: 50px;
+		float:right;
+		margin-right: 20px;
+		transform: rotate(14deg);
+	}
+
+	.row{
+		justify-content:space-around;	
+	}
+}
+
+.row--about{
+	@extend .row;
+	flex-wrap: wrap;
+}
+
+.logo{
+	font-size:1.5em;
+	border:3px solid red;
+	border-radius: 20px;
+	padding:3px;
+	color:red;
+}
+
+.about-text{
+	margin:auto;
+	font-family:Helvetica;
+	color: $light-grey;
+	text-shadow: 1px 1px $light-black;
+	padding:15px;
+	font-size: 1.5em;
+	background-color: $background-grey;
+	border-radius: 5px;
+	padding:40px 25px 40px 25px;
+}
+
+.about-section{
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.contact{
+	font-size: 0.7em;
+}
+
+@media (max-width: $phone-only) { 
+	
+}
+
+@media (min-width: $tablet-portrait-up) {
+
+}
+
+@media (min-width: $tablet-landscape-up) {
+	
+}
+
+@media (min-width: $desktop-up) {
+	.row--about{
+		flex-wrap: nowrap;	
+	}
+
+	.about-picture{
+		width:$aboutPictureWidth - 10px;
+	}
+	
+	#triangle-bottomright {	
+		margin-top: -100px;
+		border-bottom: 100px solid $offblack;
+		border-left:  $aboutPictureWidth - 100px solid transparent;
+	}
+
+	.name-header{
+		width: $aboutPictureWidth - 150px;
+		margin-top:-55px;
+		
+		h2{
+			font-size:2em;
+		}
+		h3{
+			font-size:1em;
+		}
+
+		img {
+			width: 120px;
+			height: 100px;
+			margin-right: 50px;
+		}
+	}
+
+	.contact{
+		font-size: 1em;
+	}
+}
+
+@media (min-width: $big-desktop-up) {
+
+}

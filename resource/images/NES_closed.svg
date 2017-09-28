@@ -1,0 +1,30 @@
+<svg width="250" height="200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="252" height="202" id="canvas_background" fill="#ffffff"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="0.083204" y="-0.083307" width="250" height="200" id="svg_1" rx="2"/>
+  <rect fill="#999999" stroke="null" stroke-width="6" stroke-opacity="null" x="170.083204" y="-0.083307" width="45" height="200" id="svg_11"/>
+  <rect fill="#444444" stroke-width="0" x="170.083204" y="-0.083335" width="45" height="40" id="svg_3"/>
+  <rect fill="#444444" stroke-width="0" x="170.083204" y="159.916693" width="45" height="40" id="svg_5"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="40.917197" width="43" height="7" id="svg_13"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="55.916357" width="43" height="7" id="svg_15"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="70.915518" width="43" height="7" id="svg_16"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="85.914678" width="43" height="7" id="svg_17"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="100.413867" width="43" height="7" id="svg_18"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="115.413027" width="43" height="7" id="svg_19"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="130.412188" width="43" height="7" id="svg_20"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="171.083204" y="145.411348" width="43" height="7" id="svg_21"/>
+  <rect fill="#999999" stroke-width="6" x="34.081306" y="159.914135" width="135.998669" height="40" id="svg_22" stroke="null"/>
+  <rect fill="#DDDDDD" stroke-width="1.5" x="35.58129" y="161.914117" width="132.998711" height="38" id="svg_29"/>
+  <rect fill="#333333" stroke="null" stroke-width="1.5" stroke-opacity="null" x="170.079974" y="18.74883" width="45" height="2" id="svg_31"/>
+  <rect fill="#333333" stroke="null" stroke-width="1.5" stroke-opacity="null" x="170.079974" y="178.583342" width="45" height="2" id="svg_33"/>
+ </g>
+</svg>
