@@ -17,7 +17,7 @@ $(document).ready(function(){
     		thisElem.prepend(message);
 
     	}
-        thisElem.css("list-style-image","url('resource/images/Pacman.gif')");
+        thisElem.css("list-style-image","url('resource/images/pacman.gif')");
     });
 
     $(".row--skills > ul > li").mouseleave(function(){
