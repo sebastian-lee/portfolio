@@ -3,16 +3,18 @@
 
  <g>
   <title>background</title>
-  <rect x="-1" y="-1" width="2122" height="1762" id="canvas_background" fill="none"/>
-  <g id="canvasGrid" display="none">
-   <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  <rect fill="none" id="canvas_background" height="442" width="532" y="-1" x="-1"/>
+  <g display="none" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_1"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <rect stroke="#333333" fill="none" stroke-width="36" x="1.500031" y="1" width="526.999949" height="405.999978" id="svg_7" rx="47"/>
-  <rect stroke="#4c4c4c" fill="none" stroke-width="5" x="1.5" y="2" width="527.000012" height="403.999983" id="svg_2"/>
-  <rect stroke="#999999" fill="none" stroke-width="6" x="6.5" y="6.999984" width="517" height="395" id="svg_3"/>
-  <rect stroke="null" fill="#333333" stroke-width="10" x="0" y="408" width="530" height="32" id="svg_5"/>
+  <rect stroke="#333333" rx="47" id="svg_7" height="381.99998" width="526.999949" y="2" x="1.500031" stroke-width="36" fill="none"/>
+  <rect stroke="#999999" id="svg_3" height="376.99997" width="517" y="6.999984" x="6.5" stroke-width="6" fill="none"/>
+  <rect stroke="null" id="svg_5" height="53.999995" width="530" y="386.000005" x="0" stroke-width="10" fill="#333333"/>
+  <g stroke="null" id="svg_4">
+   <rect stroke="#4c4c4c" id="svg_2" height="386.999983" width="527.000012" y="2" x="1.5" stroke-width="5" fill="none"/>
+  </g>
  </g>
 </svg>

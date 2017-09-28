@@ -18,7 +18,8 @@ body {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/TV_border.svg);
+  top: 0;
+  background-image: url(../images/Test.svg);
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   z-index: 3;
@@ -47,7 +48,7 @@ body {
   position: fixed;
   z-index: 5;
   width: 100%;
-  bottom: 0;
+  bottom: 15px;
   display: flex;
   justify-content: center; }
   .nav ul {
@@ -144,15 +145,6 @@ body {
 @media (max-width: 599px) {
   .tv-button li, .tech-button li {
     font-size: 0.5em; } }
-@media (max-height: 500px) {
-  .tv-border {
-    background-size: 100% 90vh; }
-
-  .nav {
-    background-color: #333333;
-    height: 50px; }
-    .nav ul {
-      height: fit-content; } }
 @media (min-width: 600px) {
   .content {
     padding-left: 100px;
