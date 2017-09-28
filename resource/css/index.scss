@@ -251,7 +251,8 @@ body{
 	margin-top: -100px;
 	z-index:1;
 	p {
-		width: 140px;
+		width: 50%;
+		max-width: 140px;
 		font-size: 1em;
 		text-align: center;
 		margin-left: auto;
@@ -351,6 +352,11 @@ body{
 
 	.cartridge{
 		margin-top: -100px;
+
+		p{
+			font-size: 0.7em;
+			margin-right: 20px;
+		}
 	}
 
 	.nes-zapper{
@@ -376,6 +382,13 @@ body{
 
 @media (min-width: $tablet-landscape-up) {
 	
+	.cartridge{
+		p{
+			font-size: 1em;
+			margin-right: 34px;
+		}
+	}
+
 	.nes-zapper{
 		left: 15%;
 		top: 35%;

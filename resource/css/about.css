@@ -165,17 +165,17 @@ body {
     margin-bottom: 15px; }
     .nav ul {
       max-width: 1200px; } }
-.content {
-  background-color: #0a0a0a; }
-  .content h1, .content p {
-    color: whitesmoke; }
-
 .about-picture {
   margin: auto;
   width: 100%;
   height: 300px; }
   .about-picture img {
     height: 100%; }
+
+.content {
+  background-color: #0a0a0a; }
+  .content h1, .content p {
+    color: whitesmoke; }
 
 #triangle-bottomright {
   margin-top: -75px;

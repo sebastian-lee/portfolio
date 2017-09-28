@@ -15,32 +15,32 @@ body {
   z-index: 10; }
 
 .center {
-  display: flex;
-  justify-content: center;
+  height: 100vh;
   align-items: center;
-  height: 100vh; }
+  display: flex;
+  justify-content: center; }
 
 .background {
-  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=ad8953ff&noise=82520a&density=52&opacity=30");
-  position: absolute;
   height: 100%;
   width: 100%;
+  background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=ad8953ff&noise=82520a&density=52&opacity=30");
+  position: absolute;
   z-index: -5; }
 
 .nes-controller {
+  height: 100px;
+  width: 150px;
   background-image: url(../images/NES_controller.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  position: absolute;
-  height: 100px;
-  width: 150px; }
+  position: absolute; }
 
 .nes-zapper {
+  height: 200px;
+  width: 250px;
   background-image: url(../images/NES_zapper.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 250px;
   position: absolute;
   left: 15%;
   top: 35%;
@@ -57,45 +57,45 @@ body {
   transform: rotate(-30deg); }
 
 .tv {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -125px;
-  margin-left: auto;
-  margin-right: auto;
   height: 300px;
   width: 100%;
   max-width: 400px;
   background-image: url(../images/tv_top.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  z-index: 5; }
-
-#tv-base {
   position: absolute;
   left: 0;
   right: 0;
-  top: -15px;
+  top: -125px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 5; }
+
+#tv-base {
   height: 35px;
   width: 100%;
   max-width: 400px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: grey;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 6; }
 
 #tv-screen {
+  height: 35px;
+  width: 87.5%;
+  max-width: 350px;
   position: absolute;
   left: 0;
   right: 0;
   top: -5px;
   margin-left: auto;
   margin-right: auto;
-  height: 35px;
-  width: 87.5%;
-  max-width: 350px;
   border-radius: 200%;
   border-bottom-right-radius: 200%;
   background-color: #0084ff;
@@ -191,7 +191,8 @@ body {
   margin-top: -100px;
   z-index: 1; }
   .cartridge p {
-    width: 140px;
+    width: 50%;
+    max-width: 140px;
     font-size: 1em;
     text-align: center;
     margin-left: auto;
@@ -263,6 +264,9 @@ body {
 
   .cartridge {
     margin-top: -100px; }
+    .cartridge p {
+      font-size: 0.7em;
+      margin-right: 20px; }
 
   .nes-zapper {
     left: 5%;
@@ -281,6 +285,10 @@ body {
     transform: rotate(-30deg);
     position: absolute; } }
 @media (min-width: 900px) {
+  .cartridge p {
+    font-size: 1em;
+    margin-right: 34px; }
+
   .nes-zapper {
     left: 15%;
     top: 35%;
