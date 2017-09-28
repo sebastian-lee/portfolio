@@ -170,24 +170,25 @@ body {
   color: whitesmoke; }
 
 .row--skills {
-  justify-content: space-around;
+  justify-content: flex-start;
   text-align: left;
+  flex-wrap: wrap;
   border: 8px solid #0084ff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin: 0 25px 0 25px; }
   .row--skills ul {
+    margin: 0;
     list-style: bullet; }
     .row--skills ul li {
-      margin-top: 40px;
-      margin-bottom: 40px;
       height: 45px;
       vertical-align: center;
       padding-left: 30px;
-      font-size: 2em; }
+      font-size: 1em; }
 
 .point {
   position: absolute;
   animation: fade-away 3s both;
-  margin-top: -45px;
+  margin-top: -25px;
   color: yellow; }
 
 @keyframes fade-away {
@@ -196,10 +197,25 @@ body {
   100% {
     transform: translateY(-15px);
     opacity: 0; } }
-@media (max-width: 599px) {
+@media (min-width: 900px) {
   .row--skills {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 0 25px 0 25px; } }
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: auto; }
+    .row--skills ul {
+      margin-top: 15px; }
+      .row--skills ul li {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.5em; }
+
+  .point {
+    position: absolute;
+    animation: fade-away 3s both;
+    margin-top: -45px;
+    color: yellow; } }
+@media (min-width: 1200px) {
+  .row--skills ul li {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=skills.css.map */

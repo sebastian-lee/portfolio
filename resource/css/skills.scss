@@ -8,29 +8,28 @@
 
 .row--skills{
 	@extend .row;
-	justify-content: space-around;
+	justify-content: flex-start;
 	text-align: left;
+	flex-wrap: wrap;
 	border: 8px solid $pacman-blue;
 	border-radius:5px;
-
+	margin: 0 25px 0 25px;
 	ul {
+		margin:0;
 		list-style: bullet;
 		li {
-			margin-top: 40px;
-			margin-bottom: 40px;
 			height: 45px;
 			vertical-align: center;
 			padding-left: 30px;
-			font-size: 2em;
+			font-size: 1em;
 		}
 	}
 }
 
 .point{
 	position:absolute;
-	
 	animation: fade-away 3s both;
-	margin-top: -45px;
+	margin-top: -25px;
 	color: yellow;
 }
 
@@ -46,11 +45,6 @@
 }
 
 @media (max-width: $phone-only) { 
-	.row--skills{
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		margin: 0 25px 0 25px;
-	}
 }
 
 @media (min-width: $tablet-portrait-up) {
@@ -58,11 +52,42 @@
 }
 
 @media (min-width: $tablet-landscape-up) {
-	
+	.row--skills{
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin: auto;
+
+		ul{
+			margin-top:15px;
+
+			li{
+				margin-top: 40px;
+				margin-bottom: 40px;
+				font-size: 1.5em;
+			}
+		}
+	}
+
+	.point{
+		position:absolute;
+		
+		animation: fade-away 3s both;
+		margin-top: -45px;
+		color: yellow;
+	}
 }
 
 @media (min-width: $desktop-up) {
 
+	.row--skills{
+	
+		ul{
+
+			li{
+				font-size: 2em;
+			}
+		}
+	}
 }
 
 @media (min-width: $big-desktop-up) {

@@ -24,7 +24,7 @@ $(document).ready(function(){
     		var cartLoadingOffset = 0.65;
 
     		//Check if in mobile and not first child
-    		if($(".row").css("flex-wrap") == "wrap"){
+    		if($( document ).width()<600){
     			switch($(this).attr('id')){
     		  		case "projects":
     		  			cartLoadingOffset = 0.65;
@@ -37,6 +37,9 @@ $(document).ready(function(){
     		  			break;
     		  	}
     		}
+            else if($( document ).width()<900){
+                offsetX -= $(this).width()/6 ;
+            }
 
     		$(this).toggleClass("rotate");
             $(".nes").css("background-image", "url(resource/images/NES_top.svg)");
