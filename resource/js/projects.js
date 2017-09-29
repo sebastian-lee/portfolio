@@ -34,60 +34,85 @@ $(document).ready(function(){
     var MM_mainID = "MM_1";
 
 
-    $(".project-media-item").click(function(){
-        var thisElem = $(this);
-        if(thisElem.hasClass("IA")) {
-            if(thisElem.attr('id')!=IA_mainID){
-                //Get Id of what was clicked
-                var currentID = thisElem.attr('id');
+    $(".image-container").click(function(){
+        //Don't swap if in mobile or in no wrap view.
+        if($( document ).width()>=900){
+           var mediaItem = $(this).find('.project-media-item');
+           var currentOverlay = $(this).find('.overlay');
+           if(mediaItem.hasClass("IA")) {
+               if($(this).attr('id')!=IA_mainID){
+                   //Get Id of what was clicked
+                   var currentID = $(this).attr('id');
 
-                //Swap picture and ID of the main picture with what was clicked
-                $("#"+IA_mainID).attr("src", IA_static[currentID]);
-                $("#"+IA_mainID).attr("id", currentID);
+                   //Swap text between main and current
+                   var currentOverlayText = currentOverlay.text();
+                   var mainOverlayText =  $("#"+IA_mainID).find('.overlay').text();
 
-                //Move main picture and ID to what was clicked
-                thisElem.attr('id', IA_mainID);
-                thisElem.attr("src", IA_static[IA_mainID]);
-                
-                //Make new main ID
-                IA_mainID = currentID;
-            }
-        }
-        else if(thisElem.hasClass("MM")){
-            if(thisElem.attr('id')!=MM_mainID){
-                //Similar to the IA section
-                var currentID = thisElem.attr('id');
-                
-                $("#"+MM_mainID).attr("src", MM_static[currentID]);
-                $("#"+MM_mainID).attr("id", currentID);
-                
-                thisElem.attr('id', MM_mainID);
-                thisElem.attr("src", MM_static[MM_mainID]);
-               
-                MM_mainID = currentID;
-            }
+                   currentOverlay.text(mainOverlayText);
+                   $("#"+IA_mainID).find('.overlay').text(currentOverlayText);
+
+                   //Swap picture and ID of the main picture with what was clicked
+                   $("#"+IA_mainID).find(".project-media-item").attr("src", IA_static[currentID]);
+                   $("#"+IA_mainID).attr("id", currentID);
+
+                   //Move main picture and ID to what was clicked
+                   $(this).attr('id', IA_mainID);
+                   mediaItem.attr("src", IA_static[IA_mainID]);
+                   
+                   //Make new main ID
+                   IA_mainID = currentID;
+               }
+           }
+           else if(mediaItem.hasClass("MM")){
+               if($(this).attr('id')!=MM_mainID){
+                   //Get Id of what was clicked
+                   var currentID = $(this).attr('id');
+
+                   //Swap text between main and current
+                   var currentOverlayText = currentOverlay.text();
+                   var mainOverlayText =  $("#"+MM_mainID).find('.overlay').text();
+
+                   currentOverlay.text(mainOverlayText);
+                   $("#"+MM_mainID).find('.overlay').text(currentOverlayText);
+
+                   //Swap picture and ID of the main picture with what was clicked
+                   $("#"+MM_mainID).find(".project-media-item").attr("src", MM_static[currentID]);
+                   $("#"+MM_mainID).attr("id", currentID);
+
+                   //Move main picture and ID to what was clicked
+                   $(this).attr('id', MM_mainID);
+                   mediaItem.attr("src", MM_static[MM_mainID]);
+                   
+                   //Make new main ID
+                   MM_mainID = currentID;
+               }
+           }
         }
     });
 
     //Load a gif respective to its id when being hovered
-    $(".project-media-item").hover(function(){
-        var thisElem = $(this);
-    	if(thisElem.hasClass("IA")) {
-            thisElem.attr("src", IA[thisElem.attr('id')]);
+    $(".image-container").hover(function(){
+        var mediaItem = $(this).find('.project-media-item');
+    	if(mediaItem.hasClass("IA")) {
+            mediaItem.attr("src", IA[$(this).attr('id')]);
         }
-        else if(thisElem.hasClass("MM")){
-            thisElem.attr("src",MM[thisElem.attr('id')]);
+        else if(mediaItem.hasClass("MM")){
+            mediaItem.attr("src",MM[$(this).attr('id')]);
         }
+        $(this).find('.ripple').css("display","none");
     });
 
     //Restore static image for media respective to its id.
-    $(".project-media-item").mouseleave(function(){
-        var thisElem = $(this);
-        if(thisElem.hasClass("IA")) {
-            thisElem.attr("src", IA_static[thisElem.attr('id')]);
+    $(".image-container").mouseleave(function(){
+        var mediaItem = $(this).find('.project-media-item');
+        if(mediaItem.hasClass("IA")) {
+            mediaItem.attr("src", IA_static[$(this).attr('id')]);
         }
-        else if(thisElem.hasClass("MM")){
-            thisElem.attr("src",MM_static[thisElem.attr('id')]);
+        else if(mediaItem.hasClass("MM")){
+            mediaItem.attr("src",MM_static[$(this).attr('id')]);
+        }
+        if($( document ).width()<900){
+            $(this).find('.ripple').css("display","inherit");
         }
     });
 });
