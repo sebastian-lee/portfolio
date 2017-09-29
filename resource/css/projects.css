@@ -158,7 +158,8 @@ body {
     .nav ul {
       max-width: 1200px; } }
 .project-description {
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  text-align: left; }
 
 .project-skills {
   display: flex;

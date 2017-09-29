@@ -216,6 +216,7 @@ body {
 .about-text {
   margin: auto;
   font-family: Helvetica;
+  text-align: left;
   color: #b7b7b7;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
   padding: 15px;
