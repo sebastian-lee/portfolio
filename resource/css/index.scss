@@ -283,6 +283,33 @@ body{
 	}
 }
 
+.cartridge-idle-1{
+	animation: idle 5s linear infinite;
+}
+.cartridge-idle-2{
+	animation: idle 5s linear infinite;
+	animation-delay: 0.2s;
+}
+.cartridge-idle-3{
+	animation: idle 5s linear infinite;
+	animation-delay: 0.4s;
+}
+
+@keyframes idle {
+
+	90%{
+		transform: translateY(0em);
+	}
+	
+	95%{
+		transform: translateY(-1em);
+	}
+
+	100%{
+		transform: translateY(0em);
+	}
+}
+
 .cartridge.rotate{
 	animation-name: rotate;
 	animation-duration: 1s;

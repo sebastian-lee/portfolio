@@ -6,6 +6,9 @@ $(document).ready(function(){
     	if(!cart_animating){
     		cart_animating = true;
     		$(".cartridge").removeClass("cartridge-hover");
+            $("#projects").removeClass("cartridge-idle-1");
+            $("#skills").removeClass("cartridge-idle-2");
+            $("#about").removeClass("cartridge-idle-3");
 
     		var nesOffset =  $(".nes").offset();
     		var offset =  $(this).offset();
@@ -67,6 +70,21 @@ $(document).ready(function(){
     	}
     });
 
+    $(".cartridge").hover(function(){
+        if(!cart_animating){
+            $("#projects").removeClass("cartridge-idle-1");
+            $("#skills").removeClass("cartridge-idle-2");
+            $("#about").removeClass("cartridge-idle-3");
+        }
+    });
+
+    $(".cartridge").mouseleave(function(){
+        if(!cart_animating){
+            $("#projects").addClass("cartridge-idle-1");
+            $("#skills").addClass("cartridge-idle-2");
+            $("#about").addClass("cartridge-idle-3");
+        }
+    });
 });
 
 
